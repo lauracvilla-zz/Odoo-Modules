@@ -1,0 +1,30 @@
+<openerp>
+    <data>
+      <template id="salesperson_delivery" inherit_id="stock.report_delivery_document">
+                  <xpath expr="//table[1]" position="replace">
+                    <table class="table table-condensed">
+                         <thead>
+                             <tr>
+                                 <th><strong>Order (Origin)</strong></th>
+                                 <th><strong>Salesperson</strong></th>
+                                 <th name="td_sched_date_h"><strong>Scheduled Date</strong></th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td>
+                                     <span t-field="o.origin"/>
+                                 </td>
+                                 <td>
+                                    <span t-field="o.user_id"/>
+                                  </td>
+                                 <td name="td_sched_date">
+                                    <span t-field="o.min_date"/>
+                                 </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                  </xpath>
+              </template>
+</data>
+</openerp>
