@@ -1,0 +1,13 @@
+<openerp>
+    <data>
+      <record id="opp_to_meeting_calendar_form_view" model="ir.ui.view">
+        <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+        <field name="model">calendar.event</field>
+        <field name="arch" type="xml">
+            <field name="location" position="after">
+            <field name="opportunity_id"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>

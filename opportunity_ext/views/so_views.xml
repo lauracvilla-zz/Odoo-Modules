@@ -1,0 +1,16 @@
+<openerp>
+    <data>
+
+      <record id="opportunity_on_o_f" model="ir.ui.view">
+        <field name="inherit_id" ref="sale.view_order_form"/>
+
+        <field name="model">sale.order</field>
+
+        <field name="arch" type="xml">
+          <field name="payment_term_id" position="after">
+          <field name="opportunity_id"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>

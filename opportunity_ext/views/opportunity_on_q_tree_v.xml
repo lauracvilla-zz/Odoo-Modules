@@ -1,0 +1,16 @@
+<openerp>
+    <data>
+      <!-- Record from External ID -->
+      <record id="opportunity_on_q" model="ir.ui.view">
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <!-- From object  -->
+        <field name="model">sale.order</field>
+        <!-- inherits architecture  -->
+        <field name="arch" type="xml">
+          <field name="partner_id" position="after">
+            <field name="opportunity_id" string="Opportunity"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>

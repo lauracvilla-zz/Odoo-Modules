@@ -1,0 +1,13 @@
+<openerp>
+    <data>
+      <record id="opp_in_call_preview" model="ir.ui.view">
+        <field name="inherit_id" ref="calendar.view_calendar_event_form_popup"/>
+        <field name="model">calendar.event</field>
+        <field name="arch" type="xml">
+            <field name="alarm_ids" position="after">
+            <field name="opportunity_id"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>
