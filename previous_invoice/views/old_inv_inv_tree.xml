@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+      <record id="old_inv_on_invoice_tree" model="ir.ui.view">
+        <field name="inherit_id" ref="account.invoice_tree"/>
+        <field name="model">account.invoice</field>
+        <field name="arch" type="xml">
+          <field name='number' position="after">
+                        <field name="old_invoice"/>
+
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>
