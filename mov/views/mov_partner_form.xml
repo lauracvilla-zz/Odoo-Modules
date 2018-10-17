@@ -1,0 +1,16 @@
+<!-- any questions? piotr.w.cierkosz@gmail.com -->
+<openerp>
+    <data>
+      <record id="spg_mov_cust_f_view" model="ir.ui.view">
+<!-- from external id -->
+        <field name="inherit_id" ref="purchase.view_partner_property_form"/>
+<!-- from object -->
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <field name="property_purchase_currency_id" position="after">
+             <field name="mov"/>
+      </field>
+        </field>
+      </record>
+    </data>
+</openerp>

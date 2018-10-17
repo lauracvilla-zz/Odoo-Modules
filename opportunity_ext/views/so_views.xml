@@ -1,0 +1,27 @@
+<openerp>
+    <data>
+      <record id="orderformmod_view_order_form" model="ir.ui.view">
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="model">sale.order</field>
+        <field name="arch" type="xml">
+          <group name="sale_pay" position="after">
+                                <group string="Reporting" name="technical" >
+                                    <field groups="base.group_no_one" name="origin"/>
+                                     <field name="origin" position="replace">
+                                    <field name="origin"/>
+                                    </field>
+                                </group>
+                                </group>
+        </field>
+      </record>
+      <record id="orderformmod123_sale_view_inherit123" model="ir.ui.view">
+        <field name="inherit_id" ref="sale_crm.sale_view_inherit123"/>
+        <field name="model">sale.order</field>
+        <field name="arch" type="xml">
+          <field name="opportunity_id" position="replace">
+            <field name="opportunity_id"/>
+        </field>
+      </field>
+      </record>
+    </data>
+</openerp>
