@@ -1,0 +1,20 @@
+<!-- any questions? piotr.w.cierkosz@gmail.com -->
+<openerp>
+    <data>
+      <record id="spg_mov_purchase_form" model="ir.ui.view">
+<!-- from external id -->
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+<!-- from object -->
+        <field name="model">purchase.order</field>
+        <field name="arch" type="xml">
+            <field name="date_order" position="after">
+
+              <field name="mov_parent" attrs="{'invisible':[('mov_parent', '==', False)]}"/>
+
+           <field name="mov_child" attrs="{'invisible':[('mov_parent', '!=', False)]}"/>
+
+      </field>
+        </field>
+      </record>
+    </data>
+</openerp>
