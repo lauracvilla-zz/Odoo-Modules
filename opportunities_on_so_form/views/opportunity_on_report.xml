@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  this is responsible for adding opportunity to pdf -->
+<odoo>
+  <record id="report_saleorder_document_opportunity" model="ir.ui.view">
+      <field name="inherit_id" ref="sale.report_saleorder_document"/>
+      <field name="arch" type="xml">
+        <!-- position -->
+        <xpath expr="//div[@name='payment_term']" position="before">
+        <!-- Opportunity_id block. You can change its position by adjusting the line above -->
+        <div t-if="doc.opportunity_id" class="col-xs-3">
+                   <strong>Opportunity:</strong>
+
+                   <p t-field="doc.opportunity_id"/>
+               </div>
+        </xpath>
+      </field>
+  </record>
+</odoo>
