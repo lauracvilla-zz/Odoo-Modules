@@ -1,0 +1,15 @@
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="res_partner">
+            <field name="name">show_fallback_pricelist.res.partner</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+              <xpath expr="//page[@name='sales_purchases']//field[@name='property_product_pricelist']" position="after">
+                <field name="property_product_fallback_pricelist"/>
+              </xpath>
+            </field>
+     		</record>
+    </data>
+</openerp>
