@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <template id="product_price_hide" inherit_id="website_sale.product" name="Product form price hide" active="True">
+    <xpath expr="//t[@t-call='website_sale.product_price']" position="replace">
+<t t-if="uid is not None">
+  <!--if user is other than not logged -->
+  <t t-call="website_sale.product_price"/>
+</t>
+</xpath>
+    </template>
+<!--this block is responsible to blocking the price display to not logged users in the product_price view -->
+    <template id="product_price_hide1" inherit_id="website_sale.product_price" name="Product price hide for not logged" active="True">
+      <xpath expr="//div[@class='product_price mt16']" position="replace">
+  <t t-if="uid is not None">
+    <!--if user is other than not logged -->
+    <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price mt16">
+          <h4 class="oe_price_h4 css_editable_mode_hidden">
+              <span class="text-danger oe_default_price" style="text-decoration: line-through; white-space: nowrap;" t-esc="compute_currency(product.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}" t-att-style="'text-decoration: line-through; white-space: nowrap; ' + '' if product.website_price_difference and website.get_current_pricelist().discount_policy == 'without_discount' else 'display: none;'"/>
+              <b class="oe_price" style="white-space: nowrap;" t-esc="product.website_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+              <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
+              <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+          </h4>
+         <h4 class="css_non_editable_mode_hidden decimal_precision" t-att-data-precision="str(product.currency_id.decimal_places)">
+            <span t-field="product.lst_price" t-options="{                    &quot;widget&quot;: &quot;monetary&quot;,                    &quot;display_currency&quot;: product.currency_id,                }"/>
+          </h4>
+          <h4 class="hidden oe_not_available bg-warning">Product not available</h4>
+      </div>
+  </t>
+  </xpath>
+      </template>
+
+    <template id="product_add_to_cart_replacement" inherit_id="website_sale.product" name="Log In to see price" active="True" priority="90">
+        <xpath expr="//a[@id='add_to_cart']" position="replace">
+          <t t-if="uid is not None">
+                        <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">Add to Cart</a>
+          </t>
+<t t-if="uid is None">
+          <p><a href="/web/login" class="btn btn-primary">Log In&amp;nbsp;to see price</a>&amp;nbsp;</p>
+</t>
+            </xpath>
+    </template>
+
+    </data>
