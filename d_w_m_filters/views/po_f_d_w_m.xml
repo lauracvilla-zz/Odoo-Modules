@@ -1,0 +1,18 @@
+<openerp>
+    <data>
+      <!-- Record from External ID -->
+      <record id="d_w_m_search_po" model="ir.ui.view">
+        <field name="inherit_id" ref="purchase.view_purchase_order_filter"/>
+        <!-- From object  -->
+        <field name="model">purchase.order</field>
+        <!-- inherits architecture  -->
+        <field name="arch" type="xml">
+          <field name='product_id' position="before">
+            <filter string="Today" domain="[('date_order', '&gt;=', datetime.datetime.now().strftime('%Y-%m-%d 00:00:00')),('date_order', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d 23:23:59'))]"/>
+            <filter string="Last Week" domain="[('date_order', '>', (context_today() - datetime.timedelta(8)).strftime('%Y-%m-%d 00:00:00'))]"/>
+            <filter string="Last Month" domain="[('date_order', '>', (context_today() - datetime.timedelta(31)).strftime('%Y-%m-%d 00:00:00'))]"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>

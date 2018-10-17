@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <template id="product_price_hide" inherit_id="website_sale.product" name="Product form price hide" active="True">
+    <xpath expr="//t[@t-call='website_sale.product_price']" position="replace">
+<t t-if="uid is not None">
+  <!--if user is other than not logged -->
+  <t t-call="website_sale.product_price"/>
+</t>
+</xpath>
+    </template>
+
+    <template id="product_add_to_cart_replacement" inherit_id="website_sale.product" name="Log In to see price" active="True">
+        <xpath expr="//a[@id='add_to_cart']" position="replace">
+          <t t-if="uid is not None">
+                        <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">Add to Cart</a>
+          </t>
+<t t-if="uid is None">
+          <p><a href="/web/login" class="btn btn-primary">Log In&amp;nbsp;to see price</a>&amp;nbsp;</p>
+</t>
+            </xpath>
+    </template>
+
+    </data>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <template id="kanban_price_hide" inherit_id="website_sale.products_item" name="Hide price for not logged" active="True">
+          <xpath expr="//div[@class='product_price']" position="replace">
+	         <t t-if="uid is not None">
+            <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+            <b>
+            <t t-if="(compute_currency(product.lst_price) - product.price) &gt; 0.1">
+              <del class="text-danger mr8" style="white-space: nowrap;" t-field="product.lst_price" t-field-options="{                   &quot;widget&quot;: &quot;monetary&quot;,                   &quot;from_currency&quot;: &quot;product.currency_id&quot;,                   &quot;display_currency&quot;: &quot;website.currency_id&quot;                 }"/>
+            </t>
+            <span t-field="product.price"  style="white-space: nowrap;" t-field-options="{                    &quot;widget&quot;: &quot;monetary&quot;,                    &quot;display_currency&quot;: &quot;website.currency_id&quot;                }">
+            </span>
+            <span itemprop="price" style="display:none;" t-esc="product.price"/>
+            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+            </b>
+            </div>
+          </t>
+          </xpath>
+    </template>
+    
+
+    </data>
