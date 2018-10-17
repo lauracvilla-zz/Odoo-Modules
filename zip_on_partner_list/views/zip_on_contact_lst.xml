@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+      <record id="zip_contact_list" model="ir.ui.view">
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <!-- model from object -->
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+          <field name="phone" position="after">
+            <field name="zip" string="Zip"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>
