@@ -1,0 +1,15 @@
+<openerp>
+    <data>
+      <template id="salesperson_phone_so" inherit_id="sale.report_saleorder_document">
+<!--tell where to insert additional fields -->
+        <xpath expr="//p[@t-field='doc.user_id']" position="after">
+          <td>
+                                <p t-field="doc.user_id.phone"/>
+                                <!-- if you want to add additional fields just paste them in here
+                                #for example doc.user_id.mobile would display the mobile phone number -->
+          </td>
+        </xpath>
+
+              </template>
+</data>
+</openerp>

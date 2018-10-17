@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+      <!-- very similar to adding a field to the form.
+      Model is different, also fields are updated
+      without using "replace".
+      Original action values are hanged that means after uninstallation
+      of the modules tree view will be still active.
+      You can reverse changes by editing the action in the view you want to change.
+    -->
+      <record id="product.product_template_action" model="ir.actions.act_window">
+<!-- this line should work by itself. However, it seems like only line 15 applies the changes -->
+    <field name="view_mode">tree,kanban,form</field>
+<!-- this changes the view id. It is what we are looking for -->
+<field name="view_id" ref="product.product_template_tree_view"/>
+</record>
+<!-- if you want to learn more visit www.cier.tech or send me an email piotr.w.cierkosz@gmail.com -->
+	</data>
+</openerp>
