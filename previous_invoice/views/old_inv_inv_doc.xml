@@ -1,0 +1,10 @@
+<openerp>
+    <data>
+      <template id="invoice_doc_custom" inherit_id="account.report_invoice_document">
+                  <xpath expr="//h2" position="after">
+<span t-if="o.old_invoice">
+  <p>(Previous Invoice No: <span t-field="o.old_invoice"/>)</p></span>
+                  </xpath>
+              </template>
+</data>
+</openerp>
