@@ -1,0 +1,16 @@
+<!-- any questions? piotr.w.cierkosz@gmail.com -->
+<openerp>
+    <data>
+      <record id="spg_email_cust_f_view" model="ir.ui.view">
+<!-- from external id -->
+        <field name="inherit_id" ref="base.view_partner_form"/>
+<!-- from object -->
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <field name="email" position="after">
+             <field name="spg_company_email" widget="email"/>
+      </field>
+        </field>
+      </record>
+    </data>
+</openerp>

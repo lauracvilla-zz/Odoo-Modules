@@ -1,0 +1,13 @@
+<openerp>
+    <data>
+      <record id="currency_supplier" model="ir.ui.view">
+        <field name="inherit_id" ref="product.product_supplierinfo_tree_view"/>
+        <field name="model">product.supplierinfo</field>
+        <field name="arch" type="xml">
+          <field name="price" position="after">
+            <field name="currency_id" String="Currency"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>

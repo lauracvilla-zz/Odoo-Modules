@@ -1,0 +1,14 @@
+<openerp>
+  <data>
+    <template id="salesperson_delivery" inherit_id="stock.report_delivery_document">
+      <xpath expr="//t/div/table[1]/thead/tr/th[1]" position="after">
+        <th>Client Reference</th>
+      </xpath>
+      <xpath expr="//t/div/table[1]/tbody/tr/td[1]" position="after">
+        <td>
+          <span t-field="o.client_order_ref"/>
+        </td>
+      </xpath>
+    </template>
+  </data>
+</openerp>

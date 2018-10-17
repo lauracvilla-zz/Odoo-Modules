@@ -1,0 +1,13 @@
+<openerp>
+    <data>
+      <record id="credit_on_p_list" model="ir.ui.view">
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+          <field name="email" position="after">
+            <field name="credit" string="Credit"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>
