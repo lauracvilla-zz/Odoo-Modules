@@ -1,0 +1,21 @@
+<!-- any questions? piotr.w.cierkosz@gmail.com -->
+<openerp>
+    <data>
+      <record id="invitations_visible_cal_f_view" model="ir.ui.view">
+<!-- from external id -->
+        <field name="inherit_id" ref="calendar.view_calendar_event_form"/>
+<!-- from object -->
+        <field name="model">calendar.event</field>
+        <field name="arch" type="xml">
+          <!-- change the attributes. Page 3 is the number of page as
+          you can't use "string" for inheritance - use the page number
+          if it is a page-->
+            <xpath expr="//page[3]" position="attributes">
+              <!-- groups=base.group_user has to be enter like below.
+              if it was invisible="1" "groups" would be replaced by invisible -->
+             <attribute name="groups">base.group_user</attribute>
+      </xpath>
+        </field>
+      </record>
+    </data>
+</openerp>

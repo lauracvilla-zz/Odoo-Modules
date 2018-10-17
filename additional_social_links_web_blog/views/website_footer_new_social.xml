@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  this is responsible for adding the new fields into the footer -->
+<odoo>
+  <record id="extended_social_footer" model="ir.ui.view">
+      <field name="inherit_id" ref="website.footer_default"/>
+      <field name="arch" type="xml">
+        <!-- position -->
+        <xpath expr="//div[@id='footer']/div[@class='row']/div[@id='info']/h2/a[@t-att-href='website.social_facebook']" position="after">
+        <!-- Fields - field link + if field exist then it will be displayed + field icon -->
+                <a t-att-href="website.social_instagram" t-if="website.social_instagram"><i class="fa fa-instagram"/></a>
+                <a t-att-href="website.social_pinterest" t-if="website.social_pinterest"><i class="fa fa-pinterest"/></a>
+                <a t-att-href="website.social_dribbble" t-if="website.social_dribbble"><i class="fa fa-dribbble"/></a>
+        </xpath>
+      </field>
+  </record>
+</odoo>
