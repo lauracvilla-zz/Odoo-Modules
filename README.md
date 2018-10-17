@@ -1,7 +1,7 @@
-# Odoo-Modules-12.0
-Modules for Odoo 12.0
+# Odoo-Modules
+Modules for Odoo ERP
 
-This folder contains modules for Odoo 12. Every single module was tested on a clean Odoo installation. However, you should always back up your Odoo before you install any new module.
+This folder contains modules for Odoo ERP. Every single module was tested on a clean Odoo installation. However, you should always back up your Odoo before you install any new module.
 
 For installation instructions please visit:
 
