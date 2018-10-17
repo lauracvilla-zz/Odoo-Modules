@@ -1,0 +1,18 @@
+<openerp>
+    <data>
+      <!-- Record from External ID -->
+      <record id="d_w_m_search_pay" model="ir.ui.view">
+        <field name="inherit_id" ref="account.view_account_payment_search"/>
+        <!-- From object  -->
+        <field name="model">account.payment</field>
+        <!-- inherits architecture  -->
+        <field name="arch" type="xml">
+          <field name='name' position="before">
+            <filter string="Today" domain="[('payment_date', '&gt;=', datetime.datetime.now().strftime('%Y-%m-%d 00:00:00')),('payment_date', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d 23:23:59'))]"/>
+            <filter string="Last Week" domain="[('payment_date', '>', (context_today() - datetime.timedelta(8)).strftime('%Y-%m-%d 00:00:00'))]"/>
+            <filter string="Last Month" domain="[('payment_date', '>', (context_today() - datetime.timedelta(31)).strftime('%Y-%m-%d 00:00:00'))]"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>

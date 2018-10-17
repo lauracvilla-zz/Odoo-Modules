@@ -1,0 +1,18 @@
+<openerp>
+    <data>
+      <!-- Record from External ID -->
+      <record id="d_w_m_search_inv" model="ir.ui.view">
+        <field name="inherit_id" ref="stock.view_picking_internal_search"/>
+        <!-- From object  -->
+        <field name="model">stock.picking</field>
+        <!-- inherits architecture  -->
+        <field name="arch" type="xml">
+          <field name='name' position="before">
+            <filter string="Today" domain="[('date', '&gt;=', datetime.datetime.now().strftime('%Y-%m-%d 00:00:00')),('date', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d 23:23:59'))]"/>
+            <filter string="Last Week" domain="[('date', '>', (context_today() - datetime.timedelta(8)).strftime('%Y-%m-%d 00:00:00'))]"/>
+            <filter string="Last Month" domain="[('date', '>', (context_today() - datetime.timedelta(31)).strftime('%Y-%m-%d 00:00:00'))]"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>
