@@ -12,6 +12,5 @@
     'category': 'Warehouse',
     'license': 'Other proprietary',
     'summary': 'Chenge your delivery source(warehouse) from delivery form',
-    'price': 20.0,
-    'currency': 'EUR',
+
 }
