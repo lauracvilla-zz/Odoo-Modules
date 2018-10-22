@@ -14,8 +14,7 @@
     'installable' : True,
     'license': 'Other proprietary',
     'summary': 'Adds Steemit and DTube to the website footer and blog',
-    'price': 10.0,
-    'currency': 'EUR',
+
     'auto_install': False,
     'data': [
         'views/website_footer_new_social.xml',
