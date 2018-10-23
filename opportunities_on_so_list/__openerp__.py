@@ -2,7 +2,7 @@
 
 {
     'name' : "Opportunity on Sales Orders list",
-    'version' : "1.0",
+    'version' : "1.1",
     'images': ['images/thumbnail.png'],
     'author' : "Piotr Cierkosz",
     'category': 'Sales',
@@ -12,8 +12,7 @@
     'description' : "This module adds opportunities to the orders list view",
     'website': "www.cier.tech",
     'summary': 'This module allows users to see the connected opportunity on the orders list view',
-    'price': 10.0,
-    'currency': 'EUR',
+
     'data': ['views/so_tree_views.xml',],
 
 }
