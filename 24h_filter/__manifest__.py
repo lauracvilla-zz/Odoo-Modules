@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name' : "24h filter",
-    'version' : "1.0",
+    'version' : "1.1",
     'author' : "Piotr Cierkosz",
     'images': ['images/thumbnail.png'],
     'depends' : ['sale', 'stock', 'account', 'purchase'],
@@ -12,6 +12,5 @@
     'category': 'Extra Tools',
     'license': 'Other proprietary',
     'summary': 'This module adds 24h filter to Sales, Inventory and Accounting',
-    'price': 10.0,
-    'currency': 'EUR',
+
 }
