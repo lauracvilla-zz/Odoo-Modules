@@ -12,6 +12,6 @@
     'category': 'Extra Tools',
     'license': 'Other proprietary',
     'summary': 'This module adds three new filters to Sales, Inventory and Accounting',
-    'price': 20.0,
+    'price': 10.0,
     'currency': 'EUR',
 }
