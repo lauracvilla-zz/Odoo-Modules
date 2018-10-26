@@ -1,0 +1,24 @@
+<openerp>
+    <data>
+      <template id="report_footer_custom" inherit_id="report.external_layout_footer">
+                  <xpath expr="//div[@class='footer']" position="replace">
+                    <div class="footer">
+                           <div class="text-left" >
+                              <ul class="list-inline">
+                                   <li>Page:</li>
+                                   <li><span class="page"/></li>
+                                   <li>/</li>
+                                   <li><span class="topage"/></li>
+                               </ul>
+                     <ul t-if="not company.custom_footer" class="list-inline">
+                                   <img src='/your_footer/static/src/img/OdooFooter.png' style="max-width:100%; height:auto"/>
+                               </ul>
+                               <t t-if="company.custom_footer">
+                                   <span t-raw="company.rml_footer"/>
+                               </t>
+                           </div>
+                       </div>
+                  </xpath>
+              </template>
+</data>
+</openerp>
