@@ -1,0 +1,28 @@
+<openerp>
+  <data>
+    <template id="rfq_signature_box" inherit_id="purchase.report_purchasequotation_document">
+
+      <p t-field="o.notes" position="after">
+        <br/>
+<br/>
+<br/>
+<div style=" border: 1px solid black; background-color: #fff; !important; font:15px lucida-console,sans-serif !important; ">
+            <p>We acknowledge receipt of the enquiry and offer to supply listed goods and/or services as specified at the prices shown above and subject to <span t-field="o.company_id.name"/> Terms and Conditions of purchase a copy of which is available on request.<br/><br/>
+Signed:.......................................................................................... Date .................................................................................<br/><br/>
+Vendor Quotation Ref:.................................................................. Quotation Validity: ........................................................... <br/><br/>
+Vendor Company Name: .............................................................. Vendor Contact Name: ....................................................<br/><br/>
+            </p>
+            </div>
+            <div class="oe_structure"/>
+
+<div>
+            <p><br/>
+It is essential that all requested information is provided for your quotation to be considered.  For any questions regarding this Request For Quotation, please contact us by email: <span t-field="o.company_id.email"/> or on
+<span t-field="o.company_id.phone"/>.
+
+            </p>
+            </div>
+      </p>
+    </template>
+  </data>
+</openerp>
