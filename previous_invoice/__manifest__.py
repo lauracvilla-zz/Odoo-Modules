@@ -12,7 +12,7 @@
     'demo': [],
     'depends': ['account'],
     'summary': 'Previous Invoice Number for easier transition to Odoo Accounting',
-    'price': 30.0,
+    'price': 15.0,
     'currency': 'EUR',
     'data': ['views/old_inv_inv.xml', 'views/old_inv_inv_tree.xml', 'views/old_inv_inv_purch.xml', 'views/old_inv_inv_tree_purch.xml', 'views/old_inv_inv_doc.xml'],
     'description': """
