@@ -1,0 +1,14 @@
+<openerp>
+  <data>
+    <template id="totals_on_trial_balance" inherit_id="account.report_trialbalance">
+      <xpath expr="//tbody/tr" position="after">
+        <td></td>
+<td></td>
+<td class="text-right"><span t-esc="sum(line['credit'] for line in Accounts)"/></td>
+<td class="text-right"><span t-esc="sum(line['credit'] for line in Accounts)"/></td>
+<td class="text-right"></td>
+      </xpath>
+
+    </template>
+  </data>
+</openerp>
