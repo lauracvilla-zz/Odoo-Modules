@@ -1,0 +1,13 @@
+<openerp>
+    <data>
+      <record id="tax_amount_invoice_list_c" model="ir.ui.view">
+        <field name="inherit_id" ref="account.invoice_tree"/>
+        <field name="model">account.invoice</field>
+        <field name="arch" type="xml">
+          <field name="origin" position="after">
+            <field name="amount_tax"/>
+          </field>
+        </field>
+      </record>
+    </data>
+</openerp>
