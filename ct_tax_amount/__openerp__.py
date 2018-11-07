@@ -17,5 +17,5 @@
     'data': ['views/tax_amount_inv_c.xml',
     'views/tax_amount_inv_v.xml',
     ],
-
+    'live_test_url': 'https://youtu.be/qfUDxE5ihds',
 }
