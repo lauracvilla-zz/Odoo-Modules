@@ -20,5 +20,5 @@
     'summary': 'Last Purchase and Sale Price for product variants',
     'price': 15.0,
     'currency': 'EUR',
-    'live_test_url': 'https://www.youtube.com/watch?v=Rx7b3D5dRu8',
+
 }
