@@ -8,7 +8,7 @@
     'category': 'Sales',
     'license': 'Other proprietary',
     'summary': 'Access customers, send mail, and change meeting status from Invitations Tab',
-    'price': 9.0,
+    'price': 5.0,
     'currency': 'EUR',
     'depends' : ['sale', 'crm', 'calendar'],
     'installable' : True,
