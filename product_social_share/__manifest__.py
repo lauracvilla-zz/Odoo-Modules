@@ -14,6 +14,6 @@
     'description' : "This module ads opportunity to share products on social media",
     'license': 'Other proprietary',
     'summary': 'Social media and email share buttons in product',
-    'price': 9.0,
+    'price': 5.0,
     'currency': 'EUR',
 }

@@ -13,6 +13,6 @@
     'category': 'Purchase',
     'license': 'Other proprietary',
     'summary': 'This module adds product variant next to the product on the Supplier Pricelist tree view',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
 }
