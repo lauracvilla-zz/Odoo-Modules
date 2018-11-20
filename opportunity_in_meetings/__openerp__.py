@@ -8,7 +8,7 @@
     'category': 'Sales',
     'license': 'Other proprietary',
     'summary': 'This module ads option to connect meeting to Opportunity',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
     'depends' : ['sale', 'crm', 'calendar'],
     'installable' : True,
