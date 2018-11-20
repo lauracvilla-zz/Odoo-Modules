@@ -14,6 +14,6 @@
     'category': 'Warehouse',
     'license': 'Other proprietary',
     'summary': 'Salesperson on Delivery Slip and Delivery Form',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
 }

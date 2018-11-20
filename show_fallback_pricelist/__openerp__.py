@@ -15,6 +15,6 @@
     'website': "www.cier.tech",
     'category': 'Extra Tools',
     'license': 'Other proprietary',
-    'price': 9.0,
+    'price': 5.0,
     'currency': 'EUR',
 }
