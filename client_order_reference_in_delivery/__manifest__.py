@@ -13,6 +13,6 @@
     'category': 'Warehouse',
     'license': 'Other proprietary',
     'summary': 'Customer Order Reference on Delivery Form',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
 }

@@ -11,7 +11,7 @@
     'description' : "This module adds description to the meetings list in Calendar",
     'website': "www.cier.tech",
     'summary': 'This module adds description to the meetings list in Calendar',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
     'data': ['views/cal_tree_view_desc.xml',],
 
