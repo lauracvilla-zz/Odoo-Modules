@@ -13,6 +13,6 @@
     'category': 'Website',
     'license': 'Other proprietary',
     'summary': 'After signing up user will be redirected to the shop.',
-    'price': 9.0,
+    'price': 5.0,
     'currency': 'EUR',
 }
