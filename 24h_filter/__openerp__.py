@@ -12,6 +12,5 @@
     'category': 'Extra Tools',
     'license': 'Other proprietary',
     'summary': 'This module adds 24h filter to Sales, Inventory and Accounting',
-    'price': 10.0,
-    'currency': 'EUR',
+
 }
