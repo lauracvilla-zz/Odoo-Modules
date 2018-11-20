@@ -14,6 +14,6 @@
     'category': 'Accounting',
     'license': 'Other proprietary',
     'summary': 'Change Shipping Address on Invoices',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
 }
