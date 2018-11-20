@@ -18,7 +18,7 @@
     'description' : "Last Purchase and Sale Price for product variants",
     'website': "https://www.cier.tech",
     'summary': 'Last Purchase and Sale Price for product variants',
-    'price': 15.0,
+    'price': 5.0,
     'currency': 'EUR',
 
 }

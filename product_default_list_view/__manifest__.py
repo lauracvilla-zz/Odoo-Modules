@@ -8,7 +8,7 @@
     'category': 'Sales',
     'license': 'Other proprietary',
     'summary': 'Products are now displayed in list view(tree view) by default',
-    'price': 9.0,
+    'price': 5.0,
     'currency': 'EUR',
     'depends' : ['sale', 'crm'],
     'installable' : True,
