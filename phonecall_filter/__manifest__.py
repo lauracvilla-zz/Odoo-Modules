@@ -12,6 +12,6 @@
     'category': 'Sales',
     'license': 'Other proprietary',
     'summary': 'This module adds a new filter to Logged and Scheduled calls',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
 }
