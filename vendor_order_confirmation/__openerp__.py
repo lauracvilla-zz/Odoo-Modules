@@ -13,6 +13,6 @@
     'category': 'Purchase',
     'license': 'Other proprietary',
     'summary': 'Vendor signature and confirmation box for Request for Quotation',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
 }
