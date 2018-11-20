@@ -12,10 +12,10 @@
     'description' : "Display Tax Amount on Invoice List",
     'website': "https://www.cier.tech",
     'summary': 'Display Tax Amount on Invoice List',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
     'data': ['views/tax_amount_inv_c.xml',
     'views/tax_amount_inv_v.xml',
     ],
-    'live_test_url': 'https://youtu.be/qfUDxE5ihds',    
+    'live_test_url': 'https://youtu.be/qfUDxE5ihds',
 }

@@ -12,6 +12,6 @@
     'category': 'Purchase',
     'license': 'Other proprietary',
     'summary': 'This module adds currency next to the price on the Supplier Pricelist tree view',
-    'price': 10.0,
+    'price': 5.0,
     'currency': 'EUR',
 }
