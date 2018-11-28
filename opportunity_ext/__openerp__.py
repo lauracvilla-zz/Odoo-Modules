@@ -9,7 +9,7 @@
     'category': 'Sales',
     'license': 'Other proprietary',
     'summary': 'Opportunities on Quotations List, Sales Orders form and list and in meetings',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
     'depends' : ['crm', 'sale', 'calendar'],
     'installable' : True,
