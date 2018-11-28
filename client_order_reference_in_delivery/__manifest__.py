@@ -13,6 +13,6 @@
     'category': 'Warehouse',
     'license': 'Other proprietary',
     'summary': 'Customer Order Reference on Delivery Slip and Delivery Form',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }
