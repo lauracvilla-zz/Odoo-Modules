@@ -14,7 +14,7 @@
     'installable' : True,
     'license': 'Other proprietary',
     'summary': 'Adds Instagram, Pinterest and Dribbble to the website',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
     'auto_install': False,
     'data': [
