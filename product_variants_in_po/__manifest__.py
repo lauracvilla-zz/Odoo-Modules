@@ -13,6 +13,6 @@
     'category': 'Purchase',
     'license': 'Other proprietary',
     'summary': 'This module activates the dropdown selection in Vendor pricelist form (Purchases / Supplier Pricelist). This gives an opportunity to create different pricelists for different product variants. ',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }

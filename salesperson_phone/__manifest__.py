@@ -13,6 +13,6 @@
     'category': 'Sales',
     'license': 'Other proprietary',
     'summary': "Salesperson's phone number on Sales Order and Quotation Print",
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }
