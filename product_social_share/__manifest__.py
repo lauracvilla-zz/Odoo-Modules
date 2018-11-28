@@ -15,6 +15,6 @@
 
     'license': 'Other proprietary',
     'summary': 'Social media and email share buttons in product',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }
