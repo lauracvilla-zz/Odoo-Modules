@@ -13,6 +13,6 @@
     'category': 'Accounting',
     'license': 'Other proprietary',
     'summary': 'This module adds Total for Credit and Debit on the Trail Balance Report',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }

@@ -12,6 +12,6 @@
     'category': 'Sales',
     'license': 'Other proprietary',
     'summary': 'This module adds new filters to Quotations and Orders',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }
