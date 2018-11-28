@@ -13,6 +13,6 @@
     'description' : "This module hides the price if user is not logged in. It also replaces Add to Cart button with Log in to see the price",
     'license': 'Other proprietary',
     'summary': 'Hide price of the products from not logged in users',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }

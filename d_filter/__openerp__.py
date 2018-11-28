@@ -12,6 +12,6 @@
     'category': 'Extra Tools',
     'license': 'Other proprietary',
     'summary': 'This module adds Today filter to Sales, Inventory and Accounting',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }
