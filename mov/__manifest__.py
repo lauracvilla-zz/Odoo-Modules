@@ -15,7 +15,7 @@
     'category': 'Purchases',
     'license': 'Other proprietary',
     'website': "https://www.cier.tech",
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
     'installable' : True,
 }
