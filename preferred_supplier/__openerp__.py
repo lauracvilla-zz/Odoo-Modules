@@ -13,7 +13,7 @@
     'images': ['images/thumbnail.png'],
     'license': 'Other proprietary',
     'summary': 'Set a preferred supplier against the product variants',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
     'installable' : True,
     'description' : "Set a preferred supplier against the product variants",
