@@ -8,7 +8,7 @@
     'category': 'Sales',
     'license': 'Other proprietary',
     'summary': 'This module allows every user to see the connected opportunity on the sales order and quotation form',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
     'depends' : ['sale', 'crm'],
     'installable' : True,
