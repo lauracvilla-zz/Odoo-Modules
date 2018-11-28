@@ -14,6 +14,6 @@
     'category': 'Warehouse',
     'license': 'Other proprietary',
     'summary': 'Change Delivery Address on Delivery Form & Slip',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }

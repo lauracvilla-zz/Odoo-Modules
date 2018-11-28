@@ -13,6 +13,6 @@
     'category': 'Accounting',
     'license': 'Other proprietary',
     'summary': 'Shipping/Delivery Address on Invoice',
-    'price': 5.0,
+    'price': 9.0,
     'currency': 'EUR',
 }
