@@ -9,6 +9,7 @@
     'website': 'https://www.cier.tech',
     'license': 'AGPL-3',
     'summary': 'Disable mass mailing to partners by default (opt-out)',
+    'images': ['images/thumbnail.png'],
     'depends': [
         'mail',
     ],
