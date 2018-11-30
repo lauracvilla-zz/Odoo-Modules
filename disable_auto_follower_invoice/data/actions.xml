@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record id="action_remove_customer_followers_invoices" model="ir.actions.server">
+      <field name="name">Remove Customers from Followers on Invoices</field>
+      <field name="model_id" ref="account.model_account_invoice"/>
+      <field name="code">
+env.cr.execute("""
+delete from mail_followers where partner_id not in (select partner_id from res_users);
+""")
+
+      </field>
+    </record>
+    <record id="action_rule_disable_auto_follower_invoices" model="base.action.rule">
+      <field name="name">Disable Auto Follower Invoices</field>
+      <field name="model_id" ref="account.model_account_invoice"/>
+      <field name="active">true</field>
+      <field name="kind">on_write</field>
+      <field name="server_action_ids"  eval="[(6, 0, [ref('disable_auto_follower_invoice.action_remove_customer_followers_invoices')])]"/>
+    </record>
+  </data>
+</openerp>
