@@ -9,6 +9,7 @@
     'description': """Sales Margin in Quotations and Sales Orders
 """,
     'version': '1.0',
+    'images': ['images/thumbnail.png'],
     'depends': ['sale','sale_margin'],
     'data': ['views/sales_margin_on_lines.xml'],
     'license': 'Other proprietary',
